@@ -1,0 +1,109 @@
+%%
+%% Hyperbolic Trig Identities
+%%
+%% Author: William Gao
+%% 09/04/2019
+%%
+
+\documentclass[11pt]{article}
+\setlength{\parindent}{0pt}                  % disable indent globally
+
+\RequirePackage[
+    letterpaper,
+    left=0.8in,
+    right=0.8in,
+    top=0.70in,
+    bottom=0.55in,
+    nohead
+]{geometry}
+
+% Packages
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+\newcommand{\hzline}{\noindent\makebox[\linewidth]{\rule{0.8\paperwidth}{0.4pt}}}
+
+\title{Hyperbolic Trig Identities}
+%\author{math2.org}
+\author{Version 1}
+\date{4 September 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+A compiled list of the most commonly used hyperbolic trig identities. Enjoy. \\
+
+All credits goes to \href{http://math2.org/math/trig/hyperbolics.htm}{math2.org}. If you have comments, corrections, or clarifications, please submit an issue or pull request on \href{https://github.com/chemclub/calculus}{GitHub}.
+
+
+\section{Hyperbolic Definitions}
+
+\begin{align*}
+& \sinh x = \frac{e^x-e^{-x}}{2} \\ 
+& \operatorname{csch}x = \frac{1}{\sinh x} = \frac{2}{e^x-e^{-x}}
+\end{align*}
+
+\begin{align*}
+& \sinh x = \frac{e^x-e^{-x}}{2} \\
+& \operatorname{csch}x = \frac{1}{\sinh x} = \frac{2}{e^x-e^{-x}}
+\end{align*}
+
+\begin{align*}
+& \cosh x = \frac{e^x+e^{-x}}{2} \\
+& \operatorname{sech}x = \frac{1}{\cosh x} = \frac{2}{e^x+e^{-x}}
+\end{align*}
+
+\begin{align*}
+& \tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x-e^{-x}}{e^x-e^{-x}} \\
+& \operatorname{coth}x = \frac{1}{\tanh x} = \frac{e^x+e^{-x}}{e^x-e^{-x}}
+\end{align*}
+
+
+\begin{align*}
+& \cosh^2x-\sinh^2x = 1 \\
+& \tanh^2x+\operatorname{sech}^2x \\
+& \coth^2x-\operatorname{csch}^2x
+\end{align*}
+
+
+\section{Inverse Hyperbolic Definitions}
+
+\begin{align*}
+& \operatorname{arcsinh}z=\ln\left(z+\sqrt{z^2+1}\right) \\
+& \operatorname{arccosh}z=\ln\left(z\pm\sqrt{z^2-1}\right) \\
+& \operatorname{arctanh}z=\frac{1}{2}\ln\left(\frac{1+z}{1-z}\right)
+\end{align*}
+
+\begin{align*}
+& \operatorname{arccsch}z=\ln\left(\frac{1+\sqrt{1+z^2}}{z}\right) \\
+& \operatorname{arcsech}z=\ln\left(\frac{1+\sqrt{1-z^2}}{z}\right) \\
+& \operatorname{arccoth}z=\frac{1}{2}\ln\left(\frac{z+1}{z-1}\right)
+\end{align*}
+
+
+\section{Relations to Trigonometric Functions}
+
+\begin{align*}
+& \sinh z=-i\sin\left(iz\right) \\
+& \operatorname{csch}z=i\csc\left(iz\right)
+\end{align*}
+
+\begin{align*}
+& \cos z=\cos\left(iz\right) \\
+& \operatorname{sech}z=\sec\left(iz\right)
+\end{align*}
+
+\begin{align*}
+& \tanh z=-i\tan\left(iz\right) \\
+& \coth z=i\cot\left(iz\right)
+\end{align*}
+
+\end{document}
+
